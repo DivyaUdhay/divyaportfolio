@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+.trispace {
+  font-family: "Trispace", sans-serif;
+}
+.fingerpaint {
+  font-family: "Finger Paint", cursive;
+  letter-spacing: 5px;
+}
+.navbar{
+  box-shadow: 0 3px 6px rgba(var(--bs-secondary-rgb),.2);
+}
+nav li {
+  cursor: pointer;
+}
+.quote {
+  letter-spacing: normal;
+}
+.typewriter {
+  color: #6e85b7;
+}
+.line {
+  width: 1800px;
+}
+.icons :hover {
+  cursor: pointer;
+}
+.github :hover {
+  color: #6e5494;
+}
+.linkedin :hover {
+  color: #0a66c2;
+}
+.gmail :hover {
+  color: #c71610;
+}
+#home {
+  height: 800px;
+  
+}
+#about {
+  height: 800px;
+}
+#skills {
+  height: 800px;
+}
+#project {
+  height: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#contact {
+  height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* about-page */
+.about-head{
+  letter-spacing: 1px;
+}
+.about-title{
+  color: #1e46c2;
+}
+.context{
+  font-size: larger;
+  font-weight: 500;
+}
+.list{
+  list-style: none;
+  margin-left: 70px;
+  line-height: 70px;
+  font-size: larger;
+}
+/* skill page */
+.section-title {
+  margin: -5px 0 15px 0;
+  font-size: 2.5rem;
+  overflow: hidden;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  
+}
+.skill {
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
+  /* padding-left: 3em;
+  padding-top: 3.5em; */
+}
+.skill-cintainer{
   display: flex;
-  flex-direction: column;
+  width: 10rem;
+  font-size: 1rem;
+  margin: 0.5rem;
   align-items: center;
+  align-self: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 50px;
+  background-color: rgb(53, 49, 49);
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+.profile{
+padding: 0px;
+}
+
+/* contact */
+.contact-pill{
+  width: 30rem;
   color: white;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.inside{
+  background-color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width: 991px) {
+  #home {
+    margin-top: 140px;
+    text-align: center;
+    height: 550px;
   }
-  to {
-    transform: rotate(360deg);
+  .intro{
+    font-size: large;
+    letter-spacing: normal;
+  }
+  .typewriter {
+    letter-spacing: normal;
+  }
+  .profile2 {
+    display: inline;
+  }
+  /* about-page */
+  .about-head{
+    font-size: 20px;
+    margin-left:20px  ;
+    margin-top: 20px;
+  }
+  .about-title{
+    font-size: 15px;
+    letter-spacing: normal;
+  }
+  .context{
+    font-size: small;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+    margin-top: 0.5rem;
+    padding: 1em;
+    word-spacing: 2px;
+  }
+  .list{
+    font-size: small;
+    line-height: 30px;
+    margin-left: 35px;
+  }
+  /* skill page */
+   /* skill page */
+
+   /* contact */
+   .contact-pill{
+    width: 20rem;
+
+    font-weight: 500;
+  }
+
+}
+@media (max-width: 1230px) {
+  .skill-icon{
+    margin-top:30px !important;
+    row-gap: 30px;
+    letter-spacing: -2px;
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 991px) {
+  .skill {
+    /* justify-content: center; */
+    justify-content: flex-start;
+    padding: 0 !important;
+    padding-top: 1em !important;
+  }
+}
+@media (max-width: 576px) {
+  
+  /* new */
+  .skill {
+    display: flex !important;
+    /* grid-template-columns: auto auto; */
+    padding: 0 !important;
+    padding-top: 1em !important;
+  }
+  .skill-cintainer{
+    display: flex;
+    max-width:max-content !important;
+    width: 5rem;
+    font-size: small !important;
+    margin: 0.5rem;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(53, 49, 49);
+    overflow: hidden;
+    border-radius: 10px;
+    
+  }
+  .section-title {
+    width:max-content !important; 
+  }
+  .pad{
+    padding: 0px !important;
   }
 }
